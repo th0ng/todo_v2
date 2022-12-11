@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: antiquewhite;
+  color: #404258; 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.dark-mode {
+  background-color: #404258;
+  color: white;
+}
+
+.form {
+  margin-bottom: 40px;
+}
+
+.new-item-input {
+  width: 100%;
+  height: 6rem;
+  font-size: 18px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #404258;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #404258; /* Green */
+  border: 2px solid #404258;
+  color: antiquewhite;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+}
+
+.dark-mode .submit-button {
+  background-color: white;
+  color: #404258;
+}
+
+.card {
+  min-height: 60px;
+  padding: 1rem 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  background-color: #dbd2bc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-mode .card {
+  background-color: #8B7E74;
+}
+
+.check-with-label:checked + .label-for-check {
+  text-decoration: line-through;
+}
+
+.content {
+  font-size: 20px;
+  margin-left: 1rem;
+}
+
+.delete-button:hover {
+  cursor: pointer;
+}
